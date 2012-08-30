@@ -30,9 +30,9 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>cordova</groupId>
+			<groupId>org.apache.cordova</groupId>
 			<artifactId>cordova</artifactId>
-			<version>${cordova.version}</version>
+            <version>2.0.0</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -103,7 +103,7 @@
         </executions>
 				<configuration>
 					<sdk>
-						<platform>8</platform>
+						<platform>16</platform>
 					</sdk>
 					<!--Choose device:either emulator or usb; emulator usb-->
 					<device>emulator</device>  
@@ -179,7 +179,7 @@
 							</includes>
 							<keystore>${keystore}</keystore>
 							<storepass>changeit</storepass>
-							<!--keypass>Password;密碼</keypass -->
+							<!--keypass>Password;</keypass -->
 							<alias>SPARC</alias>
 							<storetype>jks</storetype>
 							<verbose>true</verbose>   
