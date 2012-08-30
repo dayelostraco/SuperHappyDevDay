@@ -4,7 +4,7 @@
           android:versionCode="1"
           android:versionName="1.0-SNAPSHOT">
 
-    <uses-sdk android:minSdkVersion="4" android:maxSdkVersion="8"/>
+    <uses-sdk android:minSdkVersion="8" android:maxSdkVersion="16"/>
 
     <supports-screens
             android:largeScreens="true"
