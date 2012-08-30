@@ -18,3 +18,19 @@ var app = {
         completeElem.className = completeElem.className.split('hide').join('');
     }
 };
+
+function login() {
+    $.mobile.showPageLoadingMsg();
+    setTimeout(handleLogin, 2000);
+
+}
+
+function handleLogin() {
+    if($("#username").val() == '') {
+        $.mobile.hidePageLoadingMsg();
+        $.mobile.changePage( "loginError.html", { transition: "pop", role: "dialog"} );
+    } else {
+        $.mobile.hidePageLoadingMsg();
+        $.mobile.changePage( "listViewExample.html?user=" + $("#username").val(), { transition: "slide", role: "page"});
+    }
+}

@@ -1,0 +1,25 @@
+.ui-dialog-signin {
+    margin: 2% auto 15px;
+    max-width: 500px;
+    padding: 0;
+    width: 92.5%;
+}
+
+#signInLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#interviewsLogo {
+    height: auto;
+    width: auto;
+    float: right;
+}
+
+#signIn {
+    vertical-align:middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
