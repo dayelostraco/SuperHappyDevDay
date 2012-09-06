@@ -73,7 +73,7 @@
     self.viewController = [[[MainViewController alloc] init] autorelease];
     self.viewController.useSplashScreen = YES;
     self.viewController.wwwFolderName = @"www";
-    self.viewController.startPage = @"nativeDemo.html";
+    self.viewController.startPage = @"jQueryMobileTemplate.html";
     self.viewController.invokeString = invokeString;
     self.viewController.view.frame = viewBounds;
     
