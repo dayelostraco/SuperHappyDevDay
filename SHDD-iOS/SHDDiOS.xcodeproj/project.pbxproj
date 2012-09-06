@@ -43,6 +43,10 @@
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E1352710E2C1420031B30D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* Cordova.plist */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EF6A714D2D32283EC009C19D /* accelerometerDemo.js in Sources */ = {isa = PBXBuildFile; fileRef = EF6A7C2CEB6E65820756F939 /* accelerometerDemo.js */; };
+		EF6A71C7C8A3113E39E34D73 /* geolocationDemo.js in Sources */ = {isa = PBXBuildFile; fileRef = EF6A742D0C515B462F23BA0F /* geolocationDemo.js */; };
+		EF6A755B97F795B3576CE8D7 /* cameraExample.js in Sources */ = {isa = PBXBuildFile; fileRef = EF6A7CA429B771DBBC92FE70 /* cameraExample.js */; };
+		EF6A76E6270503A33002457A /* deviceDemo.js in Sources */ = {isa = PBXBuildFile; fileRef = EF6A7E8A155CF0DE9A28CDDD /* deviceDemo.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +123,10 @@
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* SHDDiOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDDiOS-Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SHDDiOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SHDDiOS-Info.plist"; path = "../SHDDiOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EF6A742D0C515B462F23BA0F /* geolocationDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = geolocationDemo.js; path = www/js/geolocationDemo.js; sourceTree = "<group>"; };
+		EF6A7C2CEB6E65820756F939 /* accelerometerDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = accelerometerDemo.js; path = www/js/accelerometerDemo.js; sourceTree = "<group>"; };
+		EF6A7CA429B771DBBC92FE70 /* cameraExample.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = cameraExample.js; path = www/js/cameraExample.js; sourceTree = "<group>"; };
+		EF6A7E8A155CF0DE9A28CDDD /* deviceDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = deviceDemo.js; path = www/js/deviceDemo.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				EF6A7E8A155CF0DE9A28CDDD /* deviceDemo.js */,
+				EF6A742D0C515B462F23BA0F /* geolocationDemo.js */,
+				EF6A7C2CEB6E65820756F939 /* accelerometerDemo.js */,
+				EF6A7CA429B771DBBC92FE70 /* cameraExample.js */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -442,6 +454,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				EF6A755B97F795B3576CE8D7 /* cameraExample.js in Sources */,
+				EF6A714D2D32283EC009C19D /* accelerometerDemo.js in Sources */,
+				EF6A71C7C8A3113E39E34D73 /* geolocationDemo.js in Sources */,
+				EF6A76E6270503A33002457A /* deviceDemo.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
