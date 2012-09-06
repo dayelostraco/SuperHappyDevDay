@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Native Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.1.1.css"/>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.1.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cameraExample.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/accelerometerDemo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/geolocationDemo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/deviceDemo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/login.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</head>
+<body>`
+
+</body>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed">
+        <h4>Cordova Native Demo Header</h4>
+        <a href="login.html" data-icon="arrow-r" data-transition="slide" data-theme="b" class="ui-btn-right">Sample App</a>
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+        <div id="cameraDiv">
+            <button onclick="capturePhoto();">Capture Photo</button>
+            <button onclick="capturePhotoEdit();">Capture Editable Photo</button>
+            <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button>
+            <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button>
+            <img style="display:none;width:60px;height:60px;" id="smallImage" src=""/>
+            <img style="display:none;" id="largeImage" src=""/>
+        </div>
+        <div id="geolocationDiv">
+            <button onclick="getGeolocation()">Get GPS Info</button>
+            <p id="geolocation"></p>
+        </div>
+        <div id="devicePropertiesDiv">
+            <button onclick="displayDeviceProperties()">Get Device Info</button>
+            <p id="deviceProperties"></p>
+        </div>
+    </div>
+    <!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Cordova Native Demo Footer</h4>
+    </div>
+    <!-- /footer -->
+</div>
+
+</body>
+</html>
