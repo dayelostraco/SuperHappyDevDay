@@ -1,25 +1,23 @@
-// Wait for Cordova to load
-document.addEventListener("deviceready", onDeviceReady, false);
-
-var watchID = null;
-
-// Cordova is ready
-function startGeoTracking() {
-    // Throw an error if no update is received every 30 seconds
-    var options = { timeout:30000 };
-    watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
+function getGeolocation() {
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 }
 
 // onSuccess Geolocation
 function onSuccess(position) {
     var element = document.getElementById('geolocation');
-    element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' +
-        'Longitude: ' + position.coords.longitude + '<br />' +
-        '<hr />' + element.innerHTML;
+    element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+    'Longitude: '          + position.coords.longitude             + '<br />' +
+    'Altitude: '           + position.coords.altitude              + '<br />' +
+    'Accuracy: '           + position.coords.accuracy              + '<br />' +
+    'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+    'Heading: '            + position.coords.heading               + '<br />' +
+    'Speed: '              + position.coords.speed                 + '<br />' +
+    'Timestamp: '          +                                   position.timestamp          + '<br />';
 }
 
 // onError Callback receives a PositionError object
+//
 function onError(error) {
-    alert('code: ' + error.code + '\n' +
-        'message: ' + error.message + '\n');
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
 }
