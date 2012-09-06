@@ -16,22 +16,26 @@
     <script type="text/javascript" charset="utf-8" src="js/geolocationDemo.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/deviceDemo.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/login.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </head>
 <body>
 <div data-role="page">
     <div data-role="header" data-position="fixed">
-        <h4>Header</h4>
-        <a href="jqueryMobileGallery.html" data-icon="arrow-r" data-transition="slide" data-theme="b" class="ui-btn-right" data-prefetch>Gallery</a>
+        <h1>Header</h1>
     </div>
     <!-- /header -->
 
     <div data-role="content">
-        <h4>Your content goes here</h4>
+        <h4>You just transitioned!</h4>
     </div>
-
     <!-- /content -->
+
     <div data-role="footer" data-position="fixed">
         <h4>jQuery Mobile Footer</h4>
+        <a href="jqueryMobileGallery.html" data-icon="back" data-transition="slide" data-direction="reverse"
+           data-theme="b" class="ui-btn-left">Back</a>
     </div>
     <!-- /footer -->
 </div>

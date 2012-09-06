@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile Gallery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.1.1.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shdd.css"/>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.1.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cameraExample.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/accelerometerDemo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/geolocationDemo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/deviceDemo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/login.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-icon="delete">Cancel</a>
+        <h1>Header</h1>
+        <a href="nativeDemo.html" data-icon="check" data-transition="slide" data-theme="b" class="ui-btn-right" data-prefetch>Native Demo</a>
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+
+        <!-- Buttons -->
+        <div id="buttonExample">
+            <h4>Buttons</h4>
+            <a href="transition.html" data-role="button" data-icon="star" data-theme="a" data-transition="slide">Button 1</a>
+            <a href="transition.html" data-role="button" data-icon="delete" data-theme="b" data-transition="flow">Button 2</a>
+            <a href="transition.html" data-role="button" data-icon="arrow-r" data-theme="c" data-transition="fade">Button 3</a>
+            <a href="transition.html" data-role="button" data-icon="check" data-theme="d" data-transition="turn">Button 4</a>
+            <a href="transition.html" data-role="button" data-icon="grid" data-theme="e" data-transition="flip">Button 5</a>
+        </div><br/><br/>
+
+        <!-- Dialogs -->
+        <div id="dialogExample" style="padding-bottom: 20px;">
+            <h4>Dialogs</h4>
+            <a href="loginError.html" data-role="button" data-rel="dialog" data-transition="pop">Open dialog</a>
+        </div><br/><br/>
+
+        <!-- List View -->
+        <div id="listviewExample" style="padding-bottom: 30px;">
+            <h4>List View</h4>
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+        </div><br/><br/>
+
+        <!-- Form Elements -->
+        <div id="formExample">
+            <h4>SHDD Form</h4>
+            <div data-role="fieldcontain">
+                <label for="name">First Name:</label>
+                <input type="text" name="name" id="name" value="" placeholder="First Name"/>
+                <label for="password">Last Name:</label>
+                <input type="password" name="username" id="password" value="" placeholder="Last Name"/>
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="select-choice-1" class="select">Contact Me Over:</label>
+                <select name="select-choice-1" id="select-choice-1">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="mail">Mail</option>
+                    <option value="bar">Drinks</option>
+                </select>
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="slider-0">Your Age:</label>
+                <input type="range" name="slider" id="slider-0" value="25" min="0" max="100"/>
+            </div>
+
+            <fieldset data-role="controlgroup">
+                <legend>Choose your favorite mobile platform:</legend>
+                <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
+                <label for="radio-choice-1">iOS</label>
+
+                <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"/>
+                <label for="radio-choice-2">Android</label>
+
+                <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"/>
+                <label for="radio-choice-3">Windows Phone 7</label>
+
+                <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
+                <label for="radio-choice-4">Blackberry</label>
+            </fieldset><br/><br/>
+
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Choose your device type:</legend>
+                <input type="radio" name="radio-choice" id="radio-choice-5" value="choice-5" checked="checked"/>
+                <label for="radio-choice-5">Phone</label>
+
+                <input type="radio" name="radio-choice" id="radio-choice-6" value="choice-6"/>
+                <label for="radio-choice-6">Tablet</label>
+
+                <input type="radio" name="radio-choice" id="radio-choice-7" value="choice-7"/>
+                <label for="radio-choice-7">Laptop</label>
+
+                <input type="radio" name="radio-choice" id="radio-choice-8" value="choice-8"/>
+                <label for="radio-choice-8">Netbook</label>
+            </fieldset><br/></br>
+
+            <label><input type="checkbox" name="checkbox-0"/> The information I entered is True </label><br/>
+
+            <div data-role="fieldcontain">
+                <label for="flip-1">Remember Me:</label>
+                <select name="flip-1" id="flip-1" data-role="slider">
+                    <option value="off">No</option>
+                    <option value="on">Yes</option>
+                </select>
+            </div>
+
+            <button type="submit" data-theme="e">Submit</button>
+        </div>
+
+    </div>
+    <!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>jQuery Mobile Footer</h4>
+        <a href="#" data-icon="gear" class="ui-btn-left">Options</a>
+    </div>
+    <!-- /footer -->
+</div>
+
+</body>
+</html>
